@@ -1,0 +1,12 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/snobo/CLionProjects/Suffix/main.cpp
+stdio.h
+/home/snobo/CLionProjects/Suffix/stdio.h
+

@@ -1,0 +1,4 @@
+/home/snobo/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/181.4445.84/bin/cmake/bin/cmake -DCMAKE_BUILD_TYPE=Debug -G "CodeBlocks - Unix Makefiles" /home/snobo/CLionProjects/Suffix
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /home/snobo/CLionProjects/Suffix/cmake-build-debug
