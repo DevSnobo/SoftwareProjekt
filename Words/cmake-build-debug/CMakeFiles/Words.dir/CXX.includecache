@@ -6,9 +6,7 @@
 
 #IncludeRegexTransform: 
 
-/home/snobo/CLionProjects/Suffix/main.cpp
+/home/snobo/CLionProjects/Words/main.cpp
 stdio.h
-/home/snobo/CLionProjects/Suffix/stdio.h
-string.h
-/home/snobo/CLionProjects/Suffix/string.h
+-
 

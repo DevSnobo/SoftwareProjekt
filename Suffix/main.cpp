@@ -1,7 +1,8 @@
 #include "stdio.h"
+#include "string.h"
 
 char *extract(char *input) {
-    char *tmp = nullptr;
+    char *tmp = input;
 
     while (*input != '\0') {
 
@@ -18,41 +19,51 @@ void extract2(char *input, char** output) {
 }
 
 
+typedef enum { OK, FAIL } Test;
+
+Test testCount(char *input2, char *expected) {
+    Test t;
+    char *output = NULL;
+    extract2(input2, &output);
+    if ((strcmp(expected, output) == 0) &&
+        (strcmp(expected, extract(input2)) == 0)) {
+        t = OK;
+    } else {
+        t = FAIL;
+    }
+    return t;
+}
+
+typedef struct {
+    char *input2;
+    char *expected;
+} TestCase;
+
+void runTests(int no, TestCase test[]) {
+    Test t;
+    int i;
+
+    for (i = 0; i < no; i++) {
+        printf("Test %d: ", i);
+        t = testCount(test[i].input2, test[i].expected);
+
+        if (OK == t)
+            printf("OK \n");
+        if (FAIL == t)
+            printf("FAIL \n");
+        printf("Input \t %s \nExpected %s \n\n", test[i].input2, test[i].expected);
+    }
+}
 int main() {
 
-    char s1[] = "Ha::ll::o";
-    char s2[] = "Ha::ll::ooo";
-    char s3[] = "Ha::ll::o:asd::dqhs:,asdu;odasu";
-    char s4[] = "tes:.sd:asdddd::";
+    const int testNo = 9;
+    TestCase tests[9] = {
+            {"AC::AB", "AB"},    {"::Ha::kk::", ""},   {"A::CAB", "CAB"},
+            {"Ha:k::k", "k"},    {"::AC:AB", "AC:AB"}, {"H::a:kk", "a:kk"},
+            {"A::C::A::B", "B"}, {"Hakk", "Hakk"},     {"Ha::k:k", "k:k"},
+    };
 
-    char *output;
+    runTests(testNo, tests);
 
-
-    extract2(s1, &output);
-    printf("%s\n", output);
-
-    output = extract(s1);
-    printf("%s\n", output);
-
-    extract2(s4, &output);
-    printf("%s\n", output);
-
-    output = extract(s4);
-    printf("%s\n", output);
-
-    extract2(s2, &output);
-    printf("%s\n", output);
-
-    output = extract(s2);
-    printf("%s\n", output);
-
-    extract2(s3, &output);
-    printf("%s\n", output);
-
-    output = extract(s3);
-    printf("%s\n", output);
-
-    extract2(s4, &output);
-    printf("%s\n", output);
-
+    return 0;
 }
