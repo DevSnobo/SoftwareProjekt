@@ -5,6 +5,7 @@ int breakIntoWords(char *line, int maxwords, char *words[]) {
     int wordStart = 0;
     int wordEnd = 0;
 
+    *words = line;
 
     for (cnt = 0; cnt < maxwords; ++cnt) {
 
@@ -35,12 +36,13 @@ int breakIntoWords(char *line, int maxwords, char *words[]) {
             break;
         }
     }
+
     return cnt;
 }
 
 int main() {
 
-    char line[] = " 1 2 3 4 5 6 7 8";
+    char line[] = "    1 2 3 4 5 6 7 8";
     int nWords = 0;
     int maxwords = 10;
     char *words[maxwords];
