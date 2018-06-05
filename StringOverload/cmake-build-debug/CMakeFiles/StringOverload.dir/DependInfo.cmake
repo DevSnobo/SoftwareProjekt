@@ -4,8 +4,8 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "C:/Users/RobinFritz/CLionProjects/StringOverload/String.cpp" "C:/Users/RobinFritz/CLionProjects/StringOverload/cmake-build-debug/CMakeFiles/StringOverload.dir/String.cpp.obj"
-  "C:/Users/RobinFritz/CLionProjects/StringOverload/main.cpp" "C:/Users/RobinFritz/CLionProjects/StringOverload/cmake-build-debug/CMakeFiles/StringOverload.dir/main.cpp.obj"
+  "/home/snobo/CLionProjects/StringOverload/String.cpp" "/home/snobo/CLionProjects/StringOverload/cmake-build-debug/CMakeFiles/StringOverload.dir/String.cpp.o"
+  "/home/snobo/CLionProjects/StringOverload/main.cpp" "/home/snobo/CLionProjects/StringOverload/cmake-build-debug/CMakeFiles/StringOverload.dir/main.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 

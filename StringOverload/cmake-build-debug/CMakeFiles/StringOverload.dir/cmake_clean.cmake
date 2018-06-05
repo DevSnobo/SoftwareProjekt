@@ -1,10 +1,8 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/StringOverload.dir/main.cpp.obj"
-  "CMakeFiles/StringOverload.dir/String.cpp.obj"
+  "CMakeFiles/StringOverload.dir/main.cpp.o"
+  "CMakeFiles/StringOverload.dir/String.cpp.o"
   "StringOverload.pdb"
-  "StringOverload.exe"
-  "StringOverload.exe.manifest"
-  "libStringOverload.dll.a"
+  "StringOverload"
 )
 
 # Per-language clean rules from dependency scanning.

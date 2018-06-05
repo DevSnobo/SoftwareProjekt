@@ -6,19 +6,19 @@
 
 #IncludeRegexTransform: 
 
-C:/Users/RobinFritz/CLionProjects/StringOverload/String.cpp
+/home/snobo/CLionProjects/StringOverload/String.cpp
 String.h
-C:/Users/RobinFritz/CLionProjects/StringOverload/String.h
+/home/snobo/CLionProjects/StringOverload/String.h
 iostream
 -
 
-C:/Users/RobinFritz/CLionProjects/StringOverload/String.h
+/home/snobo/CLionProjects/StringOverload/String.h
 iostream
 -
 
-C:/Users/RobinFritz/CLionProjects/StringOverload/main.cpp
+/home/snobo/CLionProjects/StringOverload/main.cpp
 iostream
 -
 String.h
-C:/Users/RobinFritz/CLionProjects/StringOverload/String.h
+/home/snobo/CLionProjects/StringOverload/String.h
 

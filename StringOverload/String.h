@@ -4,10 +4,10 @@ using namespace std;
 
 class String {
 private:
-    // 'String' is represented internally as a plain C-style string.
-    int size;
     char* str;
 public:
+    // 'String' is represented internally as a plain C-style string.
+    int size;
     String();
     String(char c);
     String(const char *);
