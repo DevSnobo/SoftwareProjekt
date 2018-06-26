@@ -1,0 +1,28 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/snobo/CLionProjects/TestOrakel/RE.h
+string
+-
+sstream
+-
+iostream
+-
+
+/home/snobo/CLionProjects/TestOrakel/TestOrakel.h
+RE.h
+/home/snobo/CLionProjects/TestOrakel/RE.h
+
+/home/snobo/CLionProjects/TestOrakel/main.cpp
+RE.h
+/home/snobo/CLionProjects/TestOrakel/RE.h
+TestOrakel.h
+/home/snobo/CLionProjects/TestOrakel/TestOrakel.h
+iostream
+-
+

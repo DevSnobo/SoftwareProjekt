@@ -1,0 +1,1 @@
+/usr/bin/c++  -g   CMakeFiles/TestOrakel.dir/main.cpp.o  -o TestOrakel 
